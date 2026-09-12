@@ -18,7 +18,7 @@ CAD OF RECORD:
 Onshape, document "ComfyBloom", workspace Main, assembly tab "Centrifuge Assembly".
 458 instances. Tabs: Centrifuge, Components, Base, 5X8_COUPLER, Centrifuge Assembly.
 
-URL: [***]
+URL: https://cad.onshape.com/documents/7f68ca2c53fefee57657ef1a/w/1be7287435b32af101e9f2c0/e/be93f421865ffb81668b9cbd
 
 This is the only live design. Everything in failed-iterations/ is dead, do not pull
 numbers out of it.
