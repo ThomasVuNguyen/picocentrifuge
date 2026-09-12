@@ -1,0 +1,25 @@
+Category,Item,Qty,Specification,Notes
+Printed,Chassis and bearing tower,1,PETG high infill,Includes IR pedestal and rigid MPU boss
+Printed,Rotor hub,1,PETG solid at bolt zones,Four shared arm lands and drivetrain interface
+Printed,Rotor arm,4,PETG high infill,Print together and mass match
+Printed,Swing bucket,4,PETG high infill,18.6 mm bore for 17 x 120 mm tube; print together
+Printed,Direct motor plate,1 optional,PETG,Use only for smooth direct-drive startup
+Printed,Direct coupler,1 prototype,PETG prototype,Commercial 3.17-to-8 mm coupler preferred
+Printed,Gear motor plate,1 optional,PETG,36 mm nominal center distance
+Printed,Driven gear,1 optional,60T module-1 prototype,Replace simplified teeth with validated involute
+Printed,Motor pinion,1 optional,12T module-1 prototype,Replace simplified teeth with validated involute
+Owned,A2212 brushless motor,1,1000 KV,Ticket-specified
+Owned,Sensorless ESC,1,30 A,Disable brake and program smooth ramp
+Owned,Battery,1,2S LiPo approximately 7.4 V,Add fuse and physical disconnect
+Owned,Bearing,2,608ZZ 8 x 22 x 7 mm,Light preload only
+Hardware,Shaft,1,8 mm diameter x approximately 100-125 mm,Ground steel preferred
+Hardware,Bucket pivot screw,4,M3 x 45 mm,Use smooth shank where possible
+Hardware,Bucket pivot nylock nut,4,M3,Do not pinch clevis
+Hardware,Low-friction pivot washer,8,M3 PTFE or acetal,One each side of every bucket lug
+Hardware,Arm-to-hub screw,8,M3 x 20 mm,With washers and nylock nuts
+Hardware,Drive-interface screw,4,M3 x 16 mm,Shared direct/gear bolt pattern
+Hardware,Motor/chassis screw set,1,M3 assorted,Fit selected plate and A2212 cross mount
+Instrumentation,IR reflective sensor,1,Reflective optical tachometer,Align to rotor underside target
+Instrumentation,MPU-6050 module,1,Rigid chassis mount,No vibration isolation
+Consumable,15 mL conical tube,4,17 x 120 mm,Opposing loaded tubes matched to +/-0.1 g
+Containment,Steel pot and lid,1,Minimum 466 mm clear inside diameter,Lid closed for every powered test
