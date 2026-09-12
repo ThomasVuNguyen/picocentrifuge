@@ -1,0 +1,43 @@
+name: friday
+
+on:
+  schedule:
+    - cron: "0 13 * * 5"        # Fri 09:00 ET
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "re-render all CAD, ignore the microversion cache"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  friday:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+
+      - name: render CAD
+        env:
+          ONSHAPE_ACCESS_KEY: ${{ secrets.ONSHAPE_ACCESS_KEY }}
+          ONSHAPE_SECRET_KEY: ${{ secrets.ONSHAPE_SECRET_KEY }}
+        run: node scripts/onshape-render.mjs ${{ inputs.force && '--force' || '' }}
+
+      # next: draft the post from GOAL.md + LOG.md + BOM.md + this week's renders,
+      # write it to posts/, and let create-pull-request open it for review.
+
+      - uses: peter-evans/create-pull-request@v6
+        with:
+          branch: friday
+          title: "friday"
+          commit-message: "friday: CAD renders"
+          body-path: .onshape-changed.json
+          add-paths: |
+            renders/**
+            .onshape-cache.json
+            posts/**

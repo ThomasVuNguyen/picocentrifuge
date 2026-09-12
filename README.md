@@ -1,24 +1,20 @@
-# friday
+# PicoCentrifuge
 
-A queue that arrives. Not a board I have to go look at.
+A 3D printed centrifuge for PBMC separation, run by a Raspberry Pi Pico.
+Part of the Bloom wet lab loop.
 
-Every Friday 9am a GitHub Action reads what changed in each project this week, drafts
-the writeup, and opens a PR. I comment on the PR, the agent picks up my comments, and
-I merge or close. Merge means it publishes. Close means it is dead and the slot is free.
+Read GOAL.md first. BOM.md is the source of truth for parts.
 
-Rules:
+Why this exists: blood goes in, PBMC comes out, PBMC meets the peptide, we find out if
+the algorithm was right. This is the cheapest link in that chain and it should not be
+the one that costs $3000.
 
-- one item per project per week, max. no commits that week means no draft.
-- friday always sends, even when nothing happened. silence must only ever mean the job
-  broke, never "quiet week", or I will stop trusting the channel.
-- snooze is a normal outcome, not a failure. design for the weeks I am fried.
-- deadlines must be owed to someone else. a date I set for myself is an intention.
-- done means the writeup shipped, not that the experiment worked. the failure post is
-  usually the better post.
-- kill dates get enforced. projects die on purpose here, they do not zombie.
+- `GOAL.md` - the contract. question, deadline, artifact, kill date.
+- `BOM.md` - parts. have / ordered / need / failed.
+- `LOG.md` - build log, newest first.
+- `logs/` - voice notes and transcripts.
+- `photos/` - dated photos. the timestamp is the log entry.
+- `posts/` - drafts. friday opens a PR here on fridays.
+- `failed-iterations/` - dead designs. kept for the writeup, never pulled from.
 
-Each project folder has GOAL.md as its contract. Friday reads that.
-
-## Projects
-
-- `PicoCentrifuge/` - printed swinging-bucket centrifuge for PBMC separation
+CAD lives in Onshape, document "ComfyBloom", assembly tab "Centrifuge Assembly".

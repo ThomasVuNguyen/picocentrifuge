@@ -96,10 +96,10 @@ async function writeViews(dir, views) {
   return Object.keys(views).map(n => path.relative(ROOT, path.join(dir, `${n}.png`)));
 }
 
-async function renderProject(project) {
+async function render(project) {
   const { did, wid } = parseDocUrl(project.documentUrl);
-  const outRoot = path.join(ROOT, project.folder, 'renders');
-  const cachePath = path.join(ROOT, project.folder, '.onshape-cache.json');
+  const outRoot = path.join(ROOT, 'renders');
+  const cachePath = path.join(ROOT, '.onshape-cache.json');
 
   let cache = {};
   try { cache = JSON.parse(await fs.readFile(cachePath, 'utf8')); } catch {}
@@ -155,10 +155,6 @@ async function renderProject(project) {
 }
 
 const config = JSON.parse(await fs.readFile(path.join(ROOT, 'onshape.json'), 'utf8'));
-const allChanged = [];
-for (const project of config.projects) {
-  console.log(`\n${project.folder}`);
-  allChanged.push(...(await renderProject(project)).map(n => `${project.folder}/${n}`));
-}
-console.log(`\nchanged: ${allChanged.length ? allChanged.join(', ') : 'nothing'}`);
-await fs.writeFile(path.join(ROOT, '.friday-onshape-changed.json'), JSON.stringify(allChanged, null, 2));
+const changed = await render(config);
+console.log(`\nchanged: ${changed.length ? changed.join(', ') : 'nothing'}`);
+await fs.writeFile(path.join(ROOT, '.onshape-changed.json'), JSON.stringify(changed, null, 2));
