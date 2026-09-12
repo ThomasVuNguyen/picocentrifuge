@@ -8,7 +8,7 @@
 // Usage:
 //   node scripts/onshape-render.mjs            # render what changed
 //   node scripts/onshape-render.mjs --force    # re-render everything
-//   node scripts/onshape-render.mjs --probe    # one part, every view, into _probe/
+//   node scripts/onshape-render.mjs --probe    # first element only, does not touch the cache
 //
 // Env: ONSHAPE_ACCESS_KEY, ONSHAPE_SECRET_KEY
 
@@ -40,6 +40,11 @@ const VIEWS = {
   bottom: '1,0,0,0,0,-1,0,0,0,0,-1,0',
 };
 
+// Parts get four angles, assemblies get all seven. Vendor imports explode into
+// hundreds of bodies, so a studio over MAX_PARTS renders as a whole and not per part.
+const PART_VIEWS = ['iso', 'front', 'right', 'top'];
+const MAX_PARTS = 20;
+
 const SIZE = 1200;
 const THROTTLE_MS = 900; // shaded views are expensive; be polite
 
@@ -66,11 +71,13 @@ function parseDocUrl(u) {
 }
 
 async function shadedViews(kind, did, wid, eid, partId) {
+  const wanted = partId ? PART_VIEWS : Object.keys(VIEWS);
   const seg = partId
     ? `/parts/d/${did}/w/${wid}/e/${eid}/partid/${encodeURIComponent(partId)}/shadedviews`
     : `/${kind}/d/${did}/w/${wid}/e/${eid}/shadedviews`;
   const out = {};
   for (const [name, matrix] of Object.entries(VIEWS)) {
+    if (!wanted.includes(name)) continue;
     const json = await api(seg, {
       viewMatrix: matrix,
       outputHeight: SIZE,
@@ -134,6 +141,14 @@ async function render(project) {
       entry.renders.studio = await writeViews(path.join(elDir, '_all'),
         await shadedViews('partstudios', did, wid, el.id));
       const parts = await api(`/parts/d/${did}/w/${wid}/e/${el.id}`);
+      if (parts.length > MAX_PARTS) {
+        console.log(`      (${parts.length} parts, over MAX_PARTS, studio view only)`);
+        entry.partsSkipped = parts.length;
+        manifest.elements.push(entry);
+        cache[key] = { microversionId: mv, manifest: entry };
+        changed.push(el.name);
+        continue;
+      }
       for (const p of parts) {
         console.log(`      - ${p.name}`);
         entry.renders[p.name] = await writeViews(path.join(elDir, slug(p.name)),
@@ -150,7 +165,7 @@ async function render(project) {
 
   await fs.mkdir(outRoot, { recursive: true });
   await fs.writeFile(path.join(outRoot, 'manifest.json'), JSON.stringify(manifest, null, 2));
-  await fs.writeFile(cachePath, JSON.stringify(cache, null, 2));
+  if (!PROBE) await fs.writeFile(cachePath, JSON.stringify(cache, null, 2));
   return changed;
 }
 

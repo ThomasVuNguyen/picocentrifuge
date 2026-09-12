@@ -1,4 +1,11 @@
 {
-  "documentUrl": "PASTE_THE_ONSHAPE_DOCUMENT_URL_HERE",
-  "tabs": []
+  "documentUrl": "https://cad.onshape.com/documents/7f68ca2c53fefee57657ef1a/w/1be7287435b32af101e9f2c0/e/be93f421865ffb81668b9cbd",
+  "tabs": [
+    "Base",
+    "Shaft Coupler",
+    "5X8_COUPLER",
+    "Other Components",
+    "Brushless Motor",
+    "Centrifuge Assembly"
+  ]
 }

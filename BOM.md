@@ -51,5 +51,8 @@ PETG, dried. Print matched sets in one job with identical slicer settings.
   a fit model, put the real part number here and delete this line.
 - **Rotor angle.** Render looks fixed-angle, not swinging. Fixed-angle works for Ficoll
   but gives a slanted interface and a harder draw. Confirm it is intentional.
-- **Containment vessel.** Rotor tip radius at speed decides the minimum clear ID. Measure
-  it off Onshape before buying anything. This is what killed BLOOM-2.
+- **Containment vessel.** Already modeled as `Pot` in the Base studio, rotor sits inside
+  it. Confirm the real-world part it is modeled from and put it in the Need table above.
+  Sourcing this is what killed BLOOM-2.
+- **Unnamed parts.** Base studio still has `Part 8`, `Part 9`, `Part 10`, `Part 11` and
+  `fit tes`. Render filenames come from part names, so these read badly in a build log.

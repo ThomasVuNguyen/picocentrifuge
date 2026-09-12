@@ -1,0 +1,236 @@
+{
+  "fcda8457d9aae626889e9a48": {
+    "microversionId": "d35dae30d3962c51ededa54a",
+    "manifest": {
+      "name": "Shaft Coupler",
+      "id": "fcda8457d9aae626889e9a48",
+      "type": "PARTSTUDIO",
+      "microversionId": "d35dae30d3962c51ededa54a",
+      "renders": {
+        "studio": [
+          "renders/Shaft-Coupler/_all/iso.png",
+          "renders/Shaft-Coupler/_all/front.png",
+          "renders/Shaft-Coupler/_all/back.png",
+          "renders/Shaft-Coupler/_all/right.png",
+          "renders/Shaft-Coupler/_all/left.png",
+          "renders/Shaft-Coupler/_all/top.png",
+          "renders/Shaft-Coupler/_all/bottom.png"
+        ],
+        "Corps": [
+          "renders/Shaft-Coupler/Corps/iso.png",
+          "renders/Shaft-Coupler/Corps/front.png",
+          "renders/Shaft-Coupler/Corps/right.png",
+          "renders/Shaft-Coupler/Corps/top.png"
+        ],
+        "M4x6-Vis": [
+          "renders/Shaft-Coupler/M4x6-Vis/iso.png",
+          "renders/Shaft-Coupler/M4x6-Vis/front.png",
+          "renders/Shaft-Coupler/M4x6-Vis/right.png",
+          "renders/Shaft-Coupler/M4x6-Vis/top.png"
+        ],
+        "M4x6-Vis010": [
+          "renders/Shaft-Coupler/M4x6-Vis010/iso.png",
+          "renders/Shaft-Coupler/M4x6-Vis010/front.png",
+          "renders/Shaft-Coupler/M4x6-Vis010/right.png",
+          "renders/Shaft-Coupler/M4x6-Vis010/top.png"
+        ],
+        "M4x6-Vis009": [
+          "renders/Shaft-Coupler/M4x6-Vis009/iso.png",
+          "renders/Shaft-Coupler/M4x6-Vis009/front.png",
+          "renders/Shaft-Coupler/M4x6-Vis009/right.png",
+          "renders/Shaft-Coupler/M4x6-Vis009/top.png"
+        ],
+        "M4x6-Vis011": [
+          "renders/Shaft-Coupler/M4x6-Vis011/iso.png",
+          "renders/Shaft-Coupler/M4x6-Vis011/front.png",
+          "renders/Shaft-Coupler/M4x6-Vis011/right.png",
+          "renders/Shaft-Coupler/M4x6-Vis011/top.png"
+        ]
+      }
+    }
+  },
+  "f1d74fdd2cd3cc71c9ff71dd": {
+    "microversionId": "556421b1a98ab8c2a9eaaa83",
+    "manifest": {
+      "name": "Brushless Motor",
+      "id": "f1d74fdd2cd3cc71c9ff71dd",
+      "type": "ASSEMBLY",
+      "microversionId": "556421b1a98ab8c2a9eaaa83",
+      "renders": {
+        "assembly": [
+          "renders/Brushless-Motor/_assembly/iso.png",
+          "renders/Brushless-Motor/_assembly/front.png",
+          "renders/Brushless-Motor/_assembly/back.png",
+          "renders/Brushless-Motor/_assembly/right.png",
+          "renders/Brushless-Motor/_assembly/left.png",
+          "renders/Brushless-Motor/_assembly/top.png",
+          "renders/Brushless-Motor/_assembly/bottom.png"
+        ]
+      }
+    }
+  },
+  "ec194498e66d5af21e24c842": {
+    "microversionId": "9063b77847aa120cf7cb015b",
+    "manifest": {
+      "name": "Other Components",
+      "id": "ec194498e66d5af21e24c842",
+      "type": "PARTSTUDIO",
+      "microversionId": "9063b77847aa120cf7cb015b",
+      "renders": {
+        "studio": [
+          "renders/Other-Components/_all/iso.png",
+          "renders/Other-Components/_all/front.png",
+          "renders/Other-Components/_all/back.png",
+          "renders/Other-Components/_all/right.png",
+          "renders/Other-Components/_all/left.png",
+          "renders/Other-Components/_all/top.png",
+          "renders/Other-Components/_all/bottom.png"
+        ],
+        "8mm rod": [
+          "renders/Other-Components/8mm-rod/iso.png",
+          "renders/Other-Components/8mm-rod/front.png",
+          "renders/Other-Components/8mm-rod/right.png",
+          "renders/Other-Components/8mm-rod/top.png"
+        ]
+      }
+    }
+  },
+  "603f6953385e42dc691b6a2f": {
+    "microversionId": "366b007a910ec6c4839e35dd",
+    "manifest": {
+      "name": "Base",
+      "id": "603f6953385e42dc691b6a2f",
+      "type": "PARTSTUDIO",
+      "microversionId": "366b007a910ec6c4839e35dd",
+      "renders": {
+        "studio": [
+          "renders/Base/_all/iso.png",
+          "renders/Base/_all/front.png",
+          "renders/Base/_all/back.png",
+          "renders/Base/_all/right.png",
+          "renders/Base/_all/left.png",
+          "renders/Base/_all/top.png",
+          "renders/Base/_all/bottom.png"
+        ],
+        "Base": [
+          "renders/Base/Base/iso.png",
+          "renders/Base/Base/front.png",
+          "renders/Base/Base/right.png",
+          "renders/Base/Base/top.png"
+        ],
+        "Rotor": [
+          "renders/Base/Rotor/iso.png",
+          "renders/Base/Rotor/front.png",
+          "renders/Base/Rotor/right.png",
+          "renders/Base/Rotor/top.png"
+        ],
+        "Base Cover": [
+          "renders/Base/Base-Cover/iso.png",
+          "renders/Base/Base-Cover/front.png",
+          "renders/Base/Base-Cover/right.png",
+          "renders/Base/Base-Cover/top.png"
+        ],
+        "Top": [
+          "renders/Base/Top/iso.png",
+          "renders/Base/Top/front.png",
+          "renders/Base/Top/right.png",
+          "renders/Base/Top/top.png"
+        ],
+        "Bearing Holder": [
+          "renders/Base/Bearing-Holder/iso.png",
+          "renders/Base/Bearing-Holder/front.png",
+          "renders/Base/Bearing-Holder/right.png",
+          "renders/Base/Bearing-Holder/top.png"
+        ],
+        "Pot": [
+          "renders/Base/Pot/iso.png",
+          "renders/Base/Pot/front.png",
+          "renders/Base/Pot/right.png",
+          "renders/Base/Pot/top.png"
+        ],
+        "Electronic Hub": [
+          "renders/Base/Electronic-Hub/iso.png",
+          "renders/Base/Electronic-Hub/front.png",
+          "renders/Base/Electronic-Hub/right.png",
+          "renders/Base/Electronic-Hub/top.png"
+        ],
+        "Part 8": [
+          "renders/Base/Part-8/iso.png",
+          "renders/Base/Part-8/front.png",
+          "renders/Base/Part-8/right.png",
+          "renders/Base/Part-8/top.png"
+        ],
+        "Part 9": [
+          "renders/Base/Part-9/iso.png",
+          "renders/Base/Part-9/front.png",
+          "renders/Base/Part-9/right.png",
+          "renders/Base/Part-9/top.png"
+        ],
+        "Part 10": [
+          "renders/Base/Part-10/iso.png",
+          "renders/Base/Part-10/front.png",
+          "renders/Base/Part-10/right.png",
+          "renders/Base/Part-10/top.png"
+        ],
+        "Part 11": [
+          "renders/Base/Part-11/iso.png",
+          "renders/Base/Part-11/front.png",
+          "renders/Base/Part-11/right.png",
+          "renders/Base/Part-11/top.png"
+        ],
+        "fit tes": [
+          "renders/Base/fit-tes/iso.png",
+          "renders/Base/fit-tes/front.png",
+          "renders/Base/fit-tes/right.png",
+          "renders/Base/fit-tes/top.png"
+        ]
+      }
+    }
+  },
+  "3f0cd37c01058a540ff41695": {
+    "microversionId": "a28e1c13433170f88813cf8e",
+    "manifest": {
+      "name": "5X8_COUPLER",
+      "id": "3f0cd37c01058a540ff41695",
+      "type": "PARTSTUDIO",
+      "microversionId": "a28e1c13433170f88813cf8e",
+      "renders": {
+        "studio": [
+          "renders/5X8_COUPLER/_all/iso.png",
+          "renders/5X8_COUPLER/_all/front.png",
+          "renders/5X8_COUPLER/_all/back.png",
+          "renders/5X8_COUPLER/_all/right.png",
+          "renders/5X8_COUPLER/_all/left.png",
+          "renders/5X8_COUPLER/_all/top.png",
+          "renders/5X8_COUPLER/_all/bottom.png"
+        ],
+        "Thread4": [
+          "renders/5X8_COUPLER/Thread4/iso.png",
+          "renders/5X8_COUPLER/Thread4/front.png",
+          "renders/5X8_COUPLER/Thread4/right.png",
+          "renders/5X8_COUPLER/Thread4/top.png"
+        ]
+      }
+    }
+  },
+  "be93f421865ffb81668b9cbd": {
+    "microversionId": "46bc2684f59eada263e90db3",
+    "manifest": {
+      "name": "Centrifuge Assembly",
+      "id": "be93f421865ffb81668b9cbd",
+      "type": "ASSEMBLY",
+      "microversionId": "46bc2684f59eada263e90db3",
+      "renders": {
+        "assembly": [
+          "renders/Centrifuge-Assembly/_assembly/iso.png",
+          "renders/Centrifuge-Assembly/_assembly/front.png",
+          "renders/Centrifuge-Assembly/_assembly/back.png",
+          "renders/Centrifuge-Assembly/_assembly/right.png",
+          "renders/Centrifuge-Assembly/_assembly/left.png",
+          "renders/Centrifuge-Assembly/_assembly/top.png",
+          "renders/Centrifuge-Assembly/_assembly/bottom.png"
+        ]
+      }
+    }
+  }
+}
