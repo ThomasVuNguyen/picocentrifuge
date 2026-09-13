@@ -2,3 +2,5 @@
 node_modules/
 _probe/
 .onshape-changed.json
+.env
+relevant_chats/
