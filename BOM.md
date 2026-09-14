@@ -14,14 +14,14 @@ Status: `have` / `ordered` / `need` / `failed`
 | Raspberry Pi Pico | 1 | MicroPython | have | running the ramp script |
 | 2S LiPo | 1 | ~7.4 V | have | needs a fuse and a physical disconnect |
 | Printer | 1 | Bambu A1 mini | have | PETG, dry the filament |
+| Coupler 5 to 8 mm | 1 | rigid | have | real aluminum coupler is in hand; do not print |
+| Bearing | 2 | [***] confirm size | have | real bearings are in hand; confirm size before final assembly |
 
 ## Need
 
 | Item | Qty | Spec | Status | Notes |
 |---|---|---|---|---|
 | 8 mm rod | 1 | ~100-125 mm | need | ground steel preferred |
-| Coupler 5 to 8 mm | 1 | rigid | need | modeled as tab 5X8_COUPLER. buy it, do not print it |
-| Bearing | 2 | [***] confirm size | need | see open question below |
 | M4 x 6 screw | [***] | - | need | assembly uses M4x6-Vis throughout |
 | IR reflective sensor | 1 | optical tachometer | need | 4-8 mm gap to an underside target |
 | MPU-6050 | 1 | - | need | mount flat and rigid near the bearing holder. NOT next to the rotor |
@@ -45,10 +45,10 @@ PETG, dried. Print matched sets in one job with identical slicer settings.
 
 ## Open questions
 
-- **Bearings.** The assembly models a full bearing: INNER RACE, OUTER RACE, RETAINER and
-  8 balls. Is that getting printed or is it a fit model for a bought bearing? Printed
-  races carrying a loaded rotor at 1500+ rpm is the one thing I would not risk. If it is
-  a fit model, put the real part number here and delete this line.
+- **Bearings.** Real bearings are now in hand, but the size and part number still need to
+  be confirmed before final assembly. The assembly models a full bearing: INNER RACE,
+  OUTER RACE, RETAINER and 8 balls. Use the real bearings; printed races carrying a
+  loaded rotor at 1500+ rpm is the one thing I would not risk.
 - **Rotor angle.** Render looks fixed-angle, not swinging. Fixed-angle works for Ficoll
   but gives a slanted interface and a harder draw. Confirm it is intentional.
 - **Containment vessel.** Already modeled as `Pot` in the Base studio, rotor sits inside
